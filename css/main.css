@@ -1,0 +1,81 @@
+/* Hero section */
+.hero {
+  background: url('../assets/images/big-wave.jpg') no-repeat center/cover;
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Surf spots grid */
+.surf-spots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.surf-spot {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.surf-spot img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.surf-spot a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.surf-spot a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown FAQ boxes */
+.faq {
+  margin-bottom: 2rem;
+}
+
+.faq summary {
+  cursor: pointer;
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.faq details[open] summary {
+  background: #3498db;
+  color: white;
+}
+
+.faq details p {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+}
