@@ -103,9 +103,25 @@
       </details>
     </section>
   </main>
+<footer>
+  <p>© 2025 Big Wave Surfing Hub. All rights reserved. <a href="/disclaimer.html">Affiliate Disclosure</a></p>
+</footer>
 
-  <footer>
-    <p>© 2025 Big Wave Surfing Hub. All rights reserved. <a href="/disclaimer.html">Affiliate Disclosure</a></p>
-  </footer>
+<script>
+  const hero = document.getElementById('hero');
+  const images = [
+    '../assets/images/big-waves-surfer.jpg',
+    '../assets/images/nazare-portugal.jpg',
+    '../assets/images/mavericks-california.jpg'
+  ];
+  let index = 0;
+
+  setInterval(() => {
+    hero.style.backgroundImage = `url('${images[index]}')`;
+    index = (index + 1) % images.length;
+  }, 5000); // Change image every 5 seconds
+</script>
+
+
 </body>
 </html>
