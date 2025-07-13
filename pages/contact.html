@@ -1,0 +1,89 @@
+<!-- pages/contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Big Wave Surfing Hub to share your surf stories or ask about eco-friendly gear.">
+  <meta name="keywords" content="contact big wave surfing, surf community, eco-friendly surf gear">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Contact | Big Wave Surfing Hub">
+  <meta property="og:description" content="Get in touch with our surf-loving family to share your big wave stories or ask about sustainable gear.">
+  <meta property="og:image" content="https://bigwavessurfer.com/assets/images/big-waves-surfer.jpg">
+  <meta property="og:url" content="https://bigwavessurfer.com/contact">
+  <meta property="og:type" content="website">
+  <title>Contact | Big Wave Surfing Hub</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="canonical" href="https://bigwavessurfer.com/contact">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Contact | Big Wave Surfing Hub",
+    "description": "Get in touch with our surf-loving family to share your big wave stories or ask about sustainable gear.",
+    "url": "https://bigwavessurfer.com/contact",
+    "image": "https://bigwavessurfer.com/assets/images/big-waves-surfer.jpg",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Big Wave Surfing Hub",
+      "url": "https://bigwavessurfer.com"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/shop.html">Shop</a></li>
+        <li><a href="/protect-planet.html">Protect the Planet</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>Got a big wave story or a question about eco-gear? Drop us a line, and our surf-loving family will get back to you! Check submissions in our <a href="https://app.netlify.com/sites/bigwavessurfer/forms" target="_blank">Netlify dashboard</a>.</p>
+
+    <section class="hero">
+      <div class="hero-content" style="background: url('../assets/images/big-waves-surfer.jpg') no-repeat center/cover;">
+        <h2>Paddle Out to Us</h2>
+        <p>Share your surf vibes or ask about sustainable gear. <a href="#contact-form" class="hero-cta">Send a Message</a></p>
+      </div>
+    </section>
+
+    <section class="content">
+      <h2>Send a Message</h2>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <div class="hidden">
+          <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+        </div>
+        <p>
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Your Name" required>
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Your Email" required>
+        </p>
+        <p>
+          <label for="message">Message:</label>
+          <textarea name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+        </p>
+        <p>
+          <button type="submit" class="hero-cta">Send Message</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Big Wave Surfing Hub. All rights reserved. <a href="/disclaimer.html">Affiliate Disclosure</a></p>
+  </footer>
+</body>
+</html>
