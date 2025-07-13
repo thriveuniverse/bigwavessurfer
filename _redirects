@@ -1,11 +1,7 @@
-# Redirect www to non-www
 https://www.bigwavessurfer.com/* https://bigwavessurfer.com/:splat 301!
-# Redirect HTTP to HTTPS
 http://bigwavessurfer.com/* https://bigwavessurfer.com/:splat 301!
-# Redirect /index and /index.html to root
 /index https://bigwavessurfer.com 301!
 /index.html https://bigwavessurfer.com 301!
-# Pretty URLs
 /about /pages/about.html 200!
 /disclaimer /pages/disclaimer.html 200!
 /jaws-maui /pages/jaws-maui.html 200!
@@ -14,7 +10,5 @@ http://bigwavessurfer.com/* https://bigwavessurfer.com/:splat 301!
 /protect-planet /pages/protect-planet.html 200!
 /shop /pages/shop.html 200!
 /contact /pages/contact.html 200!
-# Shop subdirectory
 /shop/* /pages/shop/:splat 200!
-# Fallback
 /* /index.html 200
