@@ -307,3 +307,34 @@ footer {
   display: inline-block;
   font-weight: bold;
 }
+
+/* contact form */
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+form p {
+  margin-bottom: 1rem;
+}
+form label {
+  display: block;
+  font-weight: bold;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form .hidden {
+  display: none;
+}
+.hero-cta {
+  background: #ff6f61;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
